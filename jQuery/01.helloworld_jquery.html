@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="html/text" charset="UTF-8">
+    <script src="js/lib/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="css/01.estilos.css">
+    <title>Hello world con Jquery</title>
+</head>
+<body>
+    <h1>Primer ejemplo utilizando la libreria JQuery</h1>
+    <h1>Hello world utilizando Jquery</h1>
+    <ul>
+        <li>Ejemplo de lista 1</li>
+        <li>Ejemplo de lista 2</li>
+        <li>Ejemplo de lista 3</li>
+        <li>Ejemplo de lista 4</li>
+        <li>Ejemplo de lista 5</li>
+    </ul>
+    
+    <div>
+        <ol>
+            <li>Ejemplo de lista numerada</li>
+            <li>Ejemplo de lista numerada</li>
+            <li>Ejemplo de lista numerada</li>
+            <li>Ejemplo de lista numerada</li>
+            <li>Ejemplo de lista numerada</li>
+        </ol>
+    </div>
+
+    <ul class="textoResaltado">
+        <li>Ejemplo de lista 1</li>
+        <li>Ejemplo de lista 2</li>
+        <li>Ejemplo de lista 3</li>
+        <li>Ejemplo de lista 4</li>
+        <li>Ejemplo de lista 5</li>
+    </ul>
+
+<script>
+    jQuery('ul').addClass('colorTexto');
+    jQuery('ol').addClass('textoEditado');
+    jQuery('div').addClass('seccionDiv');
+    jQuery('.textoResaltado').css('color','blue');
+    $('h1').css('font-style','italic');
+
+</script>
+</body>
+</html>

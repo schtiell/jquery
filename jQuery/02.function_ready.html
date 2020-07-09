@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <script src="js/lib/jquery-3.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/02.estilos.css" type="text/css">
+    <title>Uso de la funcion ready()</title>
+</head>
+<body>
+    <h1 id="titulo">Uso de la funcion ready de jQuery</h1>
+
+    <p id="parrafo">El método ready tiene como parámetro un nombre de función. Esta función se ejecutará cuando todos los elementos de la página estén cargados. Es importante notar que solo pasamos el nombre de la función y no disponemos los paréntesis abiertos y cerrados al final.</p>
+
+    <p class="parrafoLorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <ul>
+        <li>Elemento # 1</li>
+        <li>Elemento # 2</li>
+        <li>Elemento # 3</li>
+        <li>Elemento # 4</li>
+        <li>Elemento # 5</li>
+    </ul>
+    
+    <ol>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+    </ol>
+
+
+
+    <script>
+        //Metodo ready de la clase jquery que ejecuta los scripts hasta que el DOM está cargado completamente
+        $(document).ready(formatoParrafos);
+        
+        //Represent lo mismo que el metodo anterior solo que es una manera mas corta de invocar la función
+        $(estiloTitulo);
+
+        //Otra forma de aplicar una función a los objetos del DOM
+        $(function(){
+            $("parrafoLorem").addClass('parrafoLorem');
+        })
+
+        $(function(){
+            $('li:first-child').css('color','blue');
+        })
+
+        $(ultimoElemento);
+
+        //Funcion que aplica la clase css parrafos a todos los elementos que corresponden a parrafos html
+        function formatoParrafos(){
+            $('p').addClass('parrafo');
+        }
+
+        function estiloTitulo(){
+            $("#titulo").addClass('titulos');
+        }
+
+        function ultimoElemento(){
+            $('li:last-child').css('font-size','20px');
+            $('li:last-child').css('text-decoration','underline');
+        }
+
+    </script>
+</body>
+</html>

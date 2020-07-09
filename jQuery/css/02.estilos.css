@@ -1,0 +1,17 @@
+#parrafo{
+    font: italic 12px verdana;
+    background: silver;
+}
+
+.titulos{
+    font: bold 20px tahoma;
+    color: purple;
+    border: 1px solid gray;
+}
+
+.parrafoLorem{
+    font: bold 18px verdana;
+    color: blue;
+    background: orange;
+}
+
